@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to DB (Replace with your actual MongoDB URL later if needed)
+
 mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/contacts')
   .then(() => console.log('DB Connected'))
   .catch(err => console.log(err));

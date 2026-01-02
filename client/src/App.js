@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 
-// CHANGE THIS TO YOUR RENDER URL BEFORE SUBMITTING (e.g., https://your-app.onrender.com/contacts)
-const API_URL = 'http://localhost:5000/contacts';
+
+const API_URL = 'https://contact-manager-5ug0.onrender.com/contacts';
 
 function App() {
   const [contacts, setContacts] = useState([]);
@@ -26,7 +26,7 @@ function App() {
     }
   };
 
-  // 3. Delete Contact (The X Button Logic)
+  // 3. Delete Contact 
   const deleteContact = async (id) => {
     try {
       await axios.delete(`${API_URL}/${id}`);

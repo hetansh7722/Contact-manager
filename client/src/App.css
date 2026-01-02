@@ -26,7 +26,7 @@ body {
   align-items: flex-start; /* Aligns tops of both boxes */
 }
 
-/* RESPONSIVE: Stack them on small screens */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .main-layout { flex-direction: column; }
 }
